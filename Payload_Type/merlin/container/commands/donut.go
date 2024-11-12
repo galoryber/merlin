@@ -214,7 +214,7 @@ func donutCmd() structs.Command {
 		ParameterType:                           structs.COMMAND_PARAMETER_TYPE_STRING,
 		Description:                             "Bypass AMSI/WLDP : 1=skip, 2=abort on fail, 3=continue on fail",
 		Choices:                                 []string{"3", "2", "1"},
-		DefaultValue:                            "3",
+		DefaultValue:                            "1", // Changed from default 3, skipping hardcoded amsi patch
 		SupportedAgents:                         nil,
 		SupportedAgentBuildParameters:           nil,
 		ChoicesAreAllCommands:                   false,
